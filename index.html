@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RachukHouse - обери свій будинок мрії</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="business-outline"></ion-icon> RachukHome
+      </a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>
+               Головна 
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Купити</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Продати</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Лістинг</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Про</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Контакти</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-secondary">Зареєструватись</a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="article">
+      <section class="section hero" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-bg">
+            <div class="hero-content">
+
+              <h1 class="h1 hero-title">
+                Ми допоможемо тобі знайти твій <span class="span">чудовий</span> дім
+              </h1>
+
+              <p class="hero-text">
+                Чудова платформа для купівлі, продажу, здачі в оренду вашого майна без агентів або будь'якої комісії.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="hero-form-wrapper">
+            <div class="form-tab">
+
+              <button class="tab-btn active" data-tab-btn>Купити</button>
+              <button class="tab-btn" data-tab-btn>Продати</button>
+              <button class="tab-btn" data-tab-btn>Здати</button>
+
+            </div>
+
+            <form action="" class="hero-form">
+
+              <div class="input-wrapper">
+
+                <label for="search" class="input-label">Пошук : *</label>
+
+                <input type="search" name="search" id="search" placeholder="Знайди свій дім" required
+                  class="input-field">
+
+                <ion-icon name="search-outline"></ion-icon>
+
+              </div>
+
+              <div class="input-wrapper">
+                <label for="category" class="input-label">Вибрати категорії:</label>
+
+                <select name="category" id="category" class="dropdown-list">
+
+                  <option value="house">Будинки</option>
+                  <option value="apartment">Апартаменти</option>
+                  <option value="offices">Офіси</option>
+                  <option value="townhome">Таунхаус</option>
+
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="min-price" class="input-label">Мін. ціна :</label>
+
+                <select name="min-price" id="min-price" class="dropdown-list">
+
+                  <option value="min price">Мін. ціна :</option>
+                  <option value="500">500</option>
+                  <option value="1000">1000</option>
+                  <option value="2000">2000</option>
+                  <option value="3000">3000</option>
+                  <option value="4000">4000</option>
+                  <option value="5000">5000</option>
+                  <option value="6000">6000</option>
+
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="max-price" class="input-label">Макс. ціна :</label>
+
+                <select name="max-price" id="max-price" class="dropdown-list">
+
+                  <option value="max price">Макс. ціна :</option>
+                  <option value="500">500</option>
+                  <option value="1000">1000</option>
+                  <option value="2000">2000</option>
+                  <option value="3000">3000</option>
+                  <option value="4000">4000</option>
+                  <option value="5000">5000</option>
+                  <option value="6000">6000</option>
+
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Шукати зараз</button>
+
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+            <img src="./assets/images/about-banner.jpg" width="600" height="700" loading="lazy" alt="about banner"
+              class="img-cover">
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Ефективність. Прозорість. Контроль.</h2>
+        
+            <p class="section-text">
+                Рачук розробив платформу для ринку нерухомості, яка дозволяє покупцям і продавцям легко укладати угоди
+                самостійно. Платформа забезпечує ефективність, прозорість витрат і контроль у руках споживачів.
+                RachukHome – це переосмислення нерухомості.
+            </p>
+        
+            <a href="#" class="btn btn-primary">Дізнатися більше</a>
+        
+        </div>
+        
+
+        </div>
+      </section>
+
+
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+    
+            <h2 class="h2 section-title">Як це працює</h2>
+    
+            <p class="section-text">
+                Чудова платформа для купівлі, продажу та оренди вашої нерухомості без агентів та комісій.
+            </p>
+    
+            <ul class="service-list">
+    
+                <li>
+                    <div class="service-card">
+    
+                        <div class="card-icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </div>
+    
+                        <h3 class="h3 card-title">Оцінка нерухомості</h3>
+    
+                        <p class="card-text">
+                            Якщо розподіл літер і слів є випадковим, читач не буде відволікатися від основного змісту.
+                        </p>
+    
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="service-card">
+    
+                        <div class="card-icon">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </div>
+    
+                        <h3 class="h3 card-title">Зустріч з агентом</h3>
+    
+                        <p class="card-text">
+                            Якщо розподіл літер і слів є випадковим, читач не буде відволікатися від основного змісту.
+                        </p>
+    
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="service-card">
+    
+                        <div class="card-icon">
+                            <ion-icon name="key"></ion-icon>
+                        </div>
+    
+                        <h3 class="h3 card-title">Завершення угоди</h3>
+    
+                        <p class="card-text">
+                            Якщо розподіл літер і слів є випадковим, читач не буде відволікатися від основного змісту.
+                        </p>
+    
+                    </div>
+                </li>
+    
+            </ul>
+    
+        </div>
+    </section>
+    
+
+
+   <section class="section property" aria-label="property">
+    <div class="container">
+
+        <h2 class="h2 section-title">Рекомендовані об'єкти</h2>
+
+        <p class="section-text">
+            Чудова платформа для купівлі, продажу та оренди вашої нерухомості без агентів і комісій.
+        </p>
+
+        <ul class="property-list">
+
+            <li>
+                <div class="property-card">
+
+                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                        <img src="./assets/images/property-1.jpg" width="800" height="533" loading="lazy"
+                            alt="10765 Hillshire Ave, Baton Rouge, LA 70810, США" class="img-cover">
+                    </figure>
+
+                    <button class="card-action-btn" aria-label="додати до обраного">
+                        <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <div class="card-content">
+
+                        <h3 class="h3">
+                            <a href="#" class="card-title">10765 Hillshire Ave, Baton Rouge, LA 70810, США</a>
+                        </h3>
+
+                        <ul class="card-list">
+
+                            <li class="card-item">
+                                <div class="item-icon">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+
+                                <span class="item-text">8000 кв. футів</span>
+                            </li>
+
+                            <li class="card-item">
+                                <div class="item-icon">
+                                    <ion-icon name="bed-outline"></ion-icon>
+                                </div>
+
+                                <span class="item-text">4 Спальні</span>
+                            </li>
+
+                            <li class="card-item">
+                                <div class="item-icon">
+                                    <ion-icon name="man-outline"></ion-icon>
+                                </div>
+
+                                <span class="item-text">4 Ванни</span>
+                            </li>
+
+                        </ul>
+
+                        <div class="card-meta">
+
+                            <div>
+                                <span class="meta-title">Ціна</span>
+
+                                <span class="meta-text">$5000</span>
+                            </div>
+
+                            <div>
+                                <span class="meta-title">Рейтинг</span>
+
+                                <span class="meta-text">
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <span>5.0 (30)</span>
+
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+  
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                    <img src="./assets/images/property-2.jpg" width="800" height="533" loading="lazy"
+                        alt="59345 STONEWALL DR, Plaquemine, LA 70764, США" class="img-cover">
+                </figure>
+        
+                <button class="card-action-btn" aria-label="додати до обраного">
+                    <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+        
+                <div class="card-content">
+        
+                    <h3 class="h3">
+                        <a href="#" class="card-title">59345 STONEWALL DR, Plaquemine, LA 70764, США</a>
+                    </h3>
+        
+                    <ul class="card-list">
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="cube-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">8000 кв. футів</span>
+                        </li>
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="bed-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">4 Спальні</span>
+                        </li>
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="man-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">4 Ванни</span>
+                        </li>
+        
+                    </ul>
+
+                    <div class="card-meta">
+
+                      <div>
+                          <span class="meta-title">Ціна</span>
+                          <span class="meta-text">$5000</span>
+                      </div>
+      
+                      <div>
+                          <span class="meta-title">Рейтинг</span>
+                          <span class="meta-text">
+                              <div class="rating-wrapper">
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                                  <ion-icon name="star"></ion-icon>
+                              </div>
+                              <span>5.0 (30)</span>
+                          </span>
+                      </div>
+      
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                    <img src="./assets/images/property-3.jpg" width="800" height="533" loading="lazy"
+                        alt="3723 SANDBAR DR, Addis, LA 70710, США" class="img-cover">
+                </figure>
+        
+                <button class="card-action-btn" aria-label="додати до обраного">
+                    <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+        
+                <div class="card-content">
+        
+                    <h3 class="h3">
+                        <a href="#" class="card-title">3723 SANDBAR DR, Addis, LA 70710, США</a>
+                    </h3>
+        
+                    <ul class="card-list">
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="cube-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">8000 кв. футів</span>
+                        </li>
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="bed-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">4 Спальні</span>
+                        </li>
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="man-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">4 Ванни</span>
+                        </li>
+        
+                    </ul>
+        
+                    <div class="card-meta">
+        
+                        <div>
+                            <span class="meta-title">Ціна</span>
+                            <span class="meta-text">$5000</span>
+                        </div>
+        
+                        <div>
+                            <span class="meta-title">Рейтинг</span>
+                            <span class="meta-text">
+                                <div class="rating-wrapper">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                                <span>5.0 (30)</span>
+                            </span>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                    <img src="./assets/images/property-4.jpg" width="800" height="533" loading="lazy"
+                        alt="LOT 21 ROYAL OAK DR, Prairieville, LA 70769, США" class="img-cover">
+                </figure>
+        
+                <button class="card-action-btn" aria-label="додати до обраного">
+                    <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+        
+                <div class="card-content">
+        
+                    <h3 class="h3">
+                        <a href="#" class="card-title">LOT 21 ROYAL OAK DR, Prairieville, LA 70769, США</a>
+                    </h3>
+        
+                    <ul class="card-list">
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="cube-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">8000 кв. футів</span>
+                        </li>
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="bed-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">4 Спальні</span>
+                        </li>
+        
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="man-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">4 Ванни</span>
+                        </li>
+        
+                    </ul>
+        
+                    <div class="card-meta">
+        
+                        <div>
+                            <span class="meta-title">Ціна</span>
+                            <span class="meta-text">$5000</span>
+                        </div>
+        
+                        <div>
+                            <span class="meta-title">Рейтинг</span>
+                            <span class="meta-text">
+                                <div class="rating-wrapper">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                                <span>5.0 (30)</span>
+                            </span>
+                        </div>
+        
+                    </div>
+        
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                    <img src="./assets/images/property-5.jpg" width="800" height="533" loading="lazy"
+                        alt="710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, США" class="img-cover">
+                </figure>
+            
+                <button class="card-action-btn" aria-label="додати до обраного">
+                    <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                </button>
+            
+                <div class="card-content">
+            
+                    <h3 class="h3">
+                        <a href="#" class="card-title">710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, США</a>
+                    </h3>
+            
+                    <ul class="card-list">
+            
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="cube-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">8000 кв. футів</span>
+                        </li>
+            
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="bed-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">4 Спальні</span>
+                        </li>
+            
+                        <li class="card-item">
+                            <div class="item-icon">
+                                <ion-icon name="man-outline"></ion-icon>
+                            </div>
+                            <span class="item-text">4 Ванни</span>
+                        </li>
+            
+                    </ul>
+            
+                    <div class="card-meta">
+            
+                        <div>
+                            <span class="meta-title">Ціна</span>
+                            <span class="meta-text">$5000</span>
+                        </div>
+            
+                        <div>
+                            <span class="meta-title">Рейтинг</span>
+                            <span class="meta-text">
+                                <div class="rating-wrapper">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                                <span>5.0 (30)</span>
+                            </span>
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+            </div>
+            
+            <li>
+                <div class="property-card">
+            
+                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                        <img src="./assets/images/property-6.jpg" width="800" height="533" loading="lazy"
+                            alt="5133 MCLAIN WAY, Baton Rouge, LA 70809, США" class="img-cover">
+                    </figure>
+            
+                    <button class="card-action-btn" aria-label="додати до обраного">
+                        <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                    </button>
+            
+                    <div class="card-content">
+            
+                        <h3 class="h3">
+                            <a href="#" class="card-title">5133 MCLAIN WAY, Baton Rouge, LA 70809, США</a>
+                        </h3>
+            
+                        <ul class="card-list">
+            
+                            <li class="card-item">
+                                <div class="item-icon">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+                                <span class="item-text">8000 кв. футів</span>
+                            </li>
+            
+                            <li class="card-item">
+                                <div class="item-icon">
+                                    <ion-icon name="bed-outline"></ion-icon>
+                                </div>
+                                <span class="item-text">4 Спальні</span>
+                            </li>
+            
+                            <li class="card-item">
+                                <div class="item-icon">
+                                    <ion-icon name="man-outline"></ion-icon>
+                                </div>
+                                <span class="item-text">4 Ванни</span>
+                            </li>
+            
+                        </ul>
+            
+                        <div class="card-meta">
+            
+                            <div>
+                                <span class="meta-title">Ціна</span>
+                                <span class="meta-text">$5000</span>
+                            </div>
+            
+                            <div>
+                                <span class="meta-title">Рейтинг</span>
+                                <span class="meta-text">
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                    <span>5.0 (30)</span>
+                                </span>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+            
+                </div>
+            </li>
+      </section>
+
+
+
+
+
+      <section class="section contact" aria-label="contact">
+        <div class="container">
+    
+            <h2 class="h2 section-title">Є запитання? Зв'яжіться з нами!</h2>
+    
+            <p class="section-text">
+                Чудова платформа для купівлі, продажу та оренди вашої нерухомості без агентів і комісій.
+            </p>
+    
+            <button class="btn btn-primary">
+                <ion-icon name="call-outline"></ion-icon>
+    
+                <span class="span">Зв'язатися з нами</span>
+            </button>
+    
+        </div>
+    </section>
+    
+
+
+    <section class="newsletter" aria-label="newsletter">
+      <div class="container">
+  
+          <div class="wrapper">
+              <h2 class="h2 section-title">Підписатися на розсилку!</h2>
+  
+              <p class="section-text">Підпишіться, щоб отримувати останні оновлення та інформацію.</p>
+          </div>
+  
+          <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Введіть вашу електронну пошту :" aria-label="Введіть вашу електронну пошту"
+                  required class="email-field">
+  
+              <button type="submit" class="btn btn-secondary">Підписатися</button>
+          </form>
+  
+      </div>
+  </section>
+  
+  </article>
+  </main>
+  
+  <footer class="footer">
+
+    <div class="footer-top">
+        <div class="container">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <ion-icon name="business-outline"></ion-icon> Realvine
+                </a>
+
+                <p class="footer-text">
+                    Чудова платформа для купівлі, продажу та оренди вашої нерухомості без агентів і комісій.
+                </p>
+
+            </div>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Компанія</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Про нас</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Послуги</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Ціни</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Блог</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Увійти</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Корисні посилання</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Умови обслуговування</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Політика конфіденційності</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Оголошення</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Контакти</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Контактні дані</p>
+                </li>
+
+                <li class="footer-item">
+                    <ion-icon name="location-outline"></ion-icon>
+
+                    <address class="address">
+                       Україна<br>
+                        Львів,<br>
+                       вул. Бандери 24
+                        <a href="#" class="address-link">Переглянути на Google Maps</a>
+                    </address>
+                </li>
+
+                <li class="footer-item">
+                    <ion-icon name="mail-outline"></ion-icon>
+
+                    <a href="mailto:contact@example.com" class="footer-link">rachuk.yaroslav.sa.2022@lpnu.ua</a>
+                </li>
+
+                <li class="footer-item">
+                    <ion-icon name="call-outline"></ion-icon>
+
+                    <a href="tel:+152534468854" class="footer-link">+380 96 488 88 44</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    
+</footer>
+
+
+
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
